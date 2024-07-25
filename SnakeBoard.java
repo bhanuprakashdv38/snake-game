@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Board extends JPanel implements ActionListener {
+public class SnakeBoard extends JPanel implements ActionListener {
 
     private final int BOARD_WIDTH = 300;
     private final int BOARD_HEIGHT = 300;
@@ -40,7 +40,7 @@ public class Board extends JPanel implements ActionListener {
     private Image apple;
     private Image head;
 
-    public Board() {
+    public SnakeBoard() {
         initBoard();
     }
     
@@ -54,9 +54,9 @@ public class Board extends JPanel implements ActionListener {
     }
 
     private void loadImages() {
-        ball = new ImageIcon("dot.png").getImage();
-        apple = new ImageIcon("apple.png").getImage();
-        head = new ImageIcon("head.png").getImage();
+        ball = new ImageIcon("img2.png").getImage();
+        apple = new ImageIcon("img1.png").getImage();
+        head = new ImageIcon("img3.png").getImage();
     }
 
     private void initGame() {
